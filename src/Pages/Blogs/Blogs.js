@@ -20,7 +20,10 @@ const Blogs = () => {
 
                     Firebase Authentication integrates tightly with other Firebase services, and it leverages industry standards like OAuth 2.0 and OpenID Connect, so it can be easily integrated with your custom backend.</li></p>
             </div>
-            <div></div>
+            <div className='border border-indigo-500 w-1/2 mx-10 my-20 p-5 rounded-xl'>
+                <h3 className='text-2xl bold'>How does the private route work?</h3>
+                <p>The react private route component renders child components ( children ) if the user is logged in. If not logged in the user is redirected to the /login page with the return url passed in the location state property.</p>
+            </div>
         </div>
     );
 };
