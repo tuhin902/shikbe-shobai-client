@@ -28,13 +28,18 @@ const Register = () => {
             })
             .catch(error => console.error(error));
 
+    }
+
+    const handleGoogle = () => {
         signInWithGoogle(googleProvider)
             .then(result => {
                 const user = result.user;
                 console.log(user);
             })
             .catch(error => console.error(error));
+    }
 
+    const handleGithub = () => {
         signInWithGithib(githubProvider)
             .then(result => {
                 const user = result.user;
@@ -42,9 +47,7 @@ const Register = () => {
             })
             .catch(error => console.error(error));
 
-
     }
-
 
     return (
         <div>
@@ -86,9 +89,9 @@ const Register = () => {
                                 <button className="btn btn-primary">Register</button>
                             </div>
                             <div className='my-10'>
-                                <button className="btn btn-outline btn-info mb-4"><span className='mr-2'><FaGoogle></FaGoogle></span> Login with Google</button>
+                                <button onClick={handleGoogle} className="btn btn-outline btn-info mb-4"><span className='mr-2'><FaGoogle></FaGoogle></span> Login with Google</button>
                                 <br />
-                                <button className="btn btn-outline btn-success"><span className='mr-2'><FaGithub></FaGithub></span>Login with Github</button>
+                                <button onClick={handleGithub} className="btn btn-outline btn-success"><span className='mr-2'><FaGithub></FaGithub></span>Login with Github</button>
                             </div>
                         </form>
                     </div>

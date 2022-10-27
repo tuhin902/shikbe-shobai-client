@@ -2,6 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import './Header.css';
 
 const Header = () => {
 
@@ -11,6 +12,11 @@ const Header = () => {
         logOut()
             .then(() => { })
             .catch(error => console.error(error));
+    }
+
+    const handleToggle = () => {
+        var element = document.body;
+        element.classList.toggle("dark-mode")
     }
 
     return (
@@ -37,11 +43,20 @@ const Header = () => {
                         <li><Link to='/course'>Course</Link></li>
                         <li><Link to='/blogs'>Blogs</Link></li>
                         <li><Link to='/faq'>FAQ</Link></li>
-                        <li><Link to='/register'>Register</Link></li>
-                        <li><Link to='/login'>Log in</Link></li>
-                        <button onClick={handleLogout}>Log out</button>
-                        <img src={user?.photURl} alt="" />
+                        <li><button onClick={handleToggle}>toggle</button></li>
+                        {
+                            user ?
+                                <button onClick={handleLogout}>Log out</button>
+                                :
+                                <>
+                                    <li><Link to='/register'>Register</Link></li>
+                                    <li><Link to='/login'>Log in</Link></li>
+                                </>
+
+                        }
+                        <p>{user?.displayName}</p>
                     </ul>
+                    <img src={user?.photoURl} alt="" />
                 </div>
             </div>
         </div>

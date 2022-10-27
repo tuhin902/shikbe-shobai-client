@@ -6,6 +6,7 @@ import Course from "../../Pages/Course/Course";
 import Faq from "../../Pages/Faq/Faq";
 import Home from "../../Pages/Home/Home";
 import PageNotFound from "../../Pages/PageNotFound/PageNotFound";
+import Pdf from "../../Pages/Pdf/Pdf";
 import Reactpac from "../../Pages/Reactpack/Reactpac";
 import Login from "../../Pages/Shared/Login/Login";
 import PrivateRoute from "../../Pages/Shared/PrivateRoute/PrivateRoute";
@@ -53,6 +54,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/faq',
                 element: <Faq></Faq>
+            },
+            {
+                path: '/pdf',
+                element: <Pdf></Pdf>
             },
             {
                 path: '*',
