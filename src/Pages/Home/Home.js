@@ -1,9 +1,10 @@
 import React from 'react';
+import Course from '../Course/Course';
 
 const Home = () => {
     return (
         <div>
-            <h3 className='text-3xl'>home</h3>
+            <Course></Course>
         </div>
     );
 };

@@ -11,6 +11,7 @@ const Category = () => {
                 <figure><img src={categories.img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{categories.name}!</h2>
+                    <p className='text-xl'>Instructor :{categories.instructor}</p>
                     <h3 className='text-xl'>Details:</h3>
                     <p>{categories.details}</p>
                     <div className="card-actions justify-end">

@@ -15,7 +15,7 @@ const CourseCard = ({ course }) => {
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">{name}</h2>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">Enroll</button>
                         </div>
                     </div>
                 </div>

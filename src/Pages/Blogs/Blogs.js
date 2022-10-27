@@ -24,6 +24,11 @@ const Blogs = () => {
                 <h3 className='text-2xl bold'>How does the private route work?</h3>
                 <p>The react private route component renders child components ( children ) if the user is logged in. If not logged in the user is redirected to the /login page with the return url passed in the location state property.</p>
             </div>
+            <div className='border border-indigo-500 w-1/2 mx-10 my-20 p-5 rounded-xl'>
+                <h3 className='text-2xl bold'>What is Node? How does Node work?</h3>
+                <p><li>Node.js, a JavaScript runtime for building server-side or desktop applications.</li></p>
+                <p>It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.</p>
+            </div>
         </div>
     );
 };
