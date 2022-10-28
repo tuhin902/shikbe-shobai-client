@@ -28,12 +28,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/category/:id',
                 element: <Category></Category>,
-                loader: ({ params }) => fetch(`http://localhost:4000/courseinfo/${params.id}`)
+                loader: ({ params }) => fetch(`https://learning-platform-server-two.vercel.app/courseinfo/${params.id}`)
             },
             {
                 path: '/packeg/:id',
                 element: <PrivateRoute><Reactpac></Reactpac></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:4000/courseinfo/${params.id}`)
+                loader: ({ params }) => fetch(`https://learning-platform-server-two.vercel.app/courseinfo/${params.id}`)
             },
             {
                 path: '/course/:id',

@@ -7,7 +7,7 @@ const LeftSide = () => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/course-categories')
+        fetch('https://learning-platform-server-two.vercel.app/course-categories')
             .then(res => res.json())
             .then(data => setCourses(data));
     }, [])

@@ -9,7 +9,7 @@ const CourseCard = ({ course }) => {
     return (
         <div>
             <Link to={`/category/${course.id}`}>
-                <div className="card w-96 bg-base-100 shadow-xl shadow-indigo-600 m-5">
+                <div className="card w-96 bg-black-100 shadow-xl shadow-indigo-600 m-5">
                     <figure className="px-10 pt-10 course">
                         <img src={img} alt="Shoes" className="rounded-xl" />
                     </figure>

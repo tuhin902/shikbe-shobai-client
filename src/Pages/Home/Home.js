@@ -3,7 +3,7 @@ import Course from '../Course/Course';
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Course></Course>
         </div>
     );

@@ -8,14 +8,14 @@ const Category = () => {
     console.log(categories);
 
     return (
-        <div>
+        <div >
             <div className='flex justify-end'>
                 <Link to='/pdf'>
                     <button className='btn btn-primary mr-3 mt-3'>PDF</button>
                 </Link>
             </div>
             <div className='flex justify-center category mb-10'>
-                <div className="card card-compact w-96 bg-base-100 shadow-xl shadow-indigo-400">
+                <div className="card card-compact w-96 bg-black-100 shadow-xl shadow-indigo-400">
                     <figure><img src={categories.img} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{categories.name}!</h2>
