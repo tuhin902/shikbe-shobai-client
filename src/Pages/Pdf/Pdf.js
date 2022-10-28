@@ -1,6 +1,18 @@
 import React from 'react';
+import jspdf from 'jspdf'
 
 const Pdf = () => {
+
+    const generatePdf = () => {
+
+        var doc = new jspdf("p", "pt", "a4");
+        doc.html(document.querySelector("#content"), {
+            callback: function (pdf) {
+                pdf.save("mypdf.pdf");
+            },
+        });
+    };
+
     return (
         <div>
             <div>
@@ -13,6 +25,7 @@ const Pdf = () => {
                     <h3>we assure you this course will help your upcoming life</h3>
                 </div>
             </div>
+            <button onClick={generatePdf} className="btn " type="primary">Download pdf</button>
         </div>
     );
 };
