@@ -54,9 +54,20 @@ const Header = () => {
                                 </>
 
                         }
-                        <p>{user?.displayName}</p>
                     </ul>
-                    <img src={user?.photoURl} alt="" />
+                    {/* <p>{user?.displayName}</p>
+                    { 
+
+                        <img src={user?.photoURL} />
+                    } */}
+                </div>
+                <div>
+
+                    <div className='tooltip tooltip-left ' data-tip={user?.displayName}>
+                        {
+                            <img src={user?.photoURL} />
+                        }
+                    </div>
                 </div>
             </div>
         </div>
