@@ -12,7 +12,7 @@ const LeftSide = () => {
             .then(data => setCourses(data));
     }, [])
     return (
-        <div className='grid grid-cols-2 gap-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
             {
                 courses.map(course => <p key={course.id}><CourseCard course={course}></CourseCard></p>)
             }

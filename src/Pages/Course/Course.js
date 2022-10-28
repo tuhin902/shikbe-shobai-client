@@ -4,7 +4,7 @@ import RightSideNav from '../Shared/RightSideNav/RightSideNav';
 
 const Course = () => {
     return (
-        <div className='flex justify-evenly mt-10'>
+        <div className='flex flex-col lg:flex-row mt-10'>
             <div>
                 <RightSideNav></RightSideNav>
             </div>
